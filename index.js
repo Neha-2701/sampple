@@ -4,7 +4,7 @@ const app=express();
 require('./db/config')
 const User = require('./db/User')
 
-const port = process.env.PORT || 2000;
+const port = process.env.PORT || 4500;
 
 app.get('/',async (req,resp)=>{
     const data=await User.find();
